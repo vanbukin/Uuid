@@ -104,7 +104,7 @@ jobs:
     runs-on: ubuntu-22.04
     needs: build-test-and-publish
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: NuGet package
           path: out
